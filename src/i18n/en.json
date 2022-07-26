@@ -125,7 +125,7 @@
         "description": "Log in with OAuth",
         "logout": "Log out",
         "password": "Password",
-        "placeholder": "myusername",
+        "placeholder": "e.g. lain",
         "register": "Register",
         "username": "Username",
         "hint": "Log in to join the discussion",

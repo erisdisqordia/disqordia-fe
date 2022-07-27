@@ -23,7 +23,7 @@
 @import '../../_variables.scss';
 
 .QuoteButton {
-  display: none;
+  display: flex;
 
   > :first-child {
     padding: 10px;
@@ -43,5 +43,11 @@
     }
   }
 
+}
+
+@media all and (max-width: 800px) {
+  .QuoteButton {
+    display: none;
+  }
 }
 </style>

@@ -118,7 +118,7 @@
         </button>
         <button
           v-if="(status.visibility === 'public' || status.visibility === 'unlisted')"
-          class="button-default dropdown-item dropdown-item-icon"
+          class="button-default dropdown-item dropdown-item-icon extra-quote"
           @click.prevent="$emit('quote-toggle')"
           @click="close"
         >
@@ -162,4 +162,11 @@
     }
   }
 }
+
+@media all and (min-width: 801px) {
+  .extra-quote {
+    display: none !important;
+  }
+}
+
 </style>

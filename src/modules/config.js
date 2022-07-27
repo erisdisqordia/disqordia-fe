@@ -33,7 +33,7 @@ export const defaultState = {
   hideMutedThreads: undefined, // instance default
   hideWordFilteredPosts: undefined, // instance default
   muteBotStatuses: undefined, // instance default
-  collapseMessageWithSubject: undefined, // instance default
+  collapseMessageWithSubject: true, // instance default
   padEmoji: true,
   hideAttachments: false,
   hideAttachmentsInConv: false,
@@ -44,11 +44,11 @@ export const defaultState = {
   loopVideoSilentOnly: true,
   streaming: false,
   emojiReactionsOnTimeline: true,
-  alwaysShowNewPostButton: false,
+  alwaysShowNewPostButton: true,
   autohideFloatingPostButton: false,
   pauseOnUnfocused: true,
   stopGifs: true,
-  replyVisibility: 'all',
+  replyVisibility: 'following',
   thirdColumnMode: 'notifications',
   notificationVisibility: {
     follows: true,
@@ -94,7 +94,7 @@ export const defaultState = {
   virtualScrolling: undefined, // instance default
   sensitiveByDefault: undefined, // instance default
   sensitiveIfSubject: undefined,
-  renderMisskeyMarkdown: undefined,
+  renderMisskeyMarkdown: true,
   conversationDisplay: undefined, // instance default
   conversationTreeAdvanced: undefined, // instance default
   conversationOtherRepliesButton: undefined, // instance default

@@ -56,13 +56,15 @@
 }
 
 .emoji-reaction {
-  padding: 0 0.5em;
+  padding: 1px 6px;
   margin-right: 0.5em;
   margin-top: 0.5em;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  font-size: 0.7em !important;
+  height: 30px;
   .reaction-emoji {
     width: 2.55em !important;
     margin-right: 0.25em;

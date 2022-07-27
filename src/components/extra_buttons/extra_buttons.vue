@@ -116,6 +116,17 @@
             :icon="['far', 'flag']"
           /><span>{{ $t("user_card.report") }}</span>
         </button>
+        <button
+          v-if="(status.visibility === 'public' || status.visibility === 'unlisted')"
+          class="button-default dropdown-item dropdown-item-icon"
+          @click.prevent="$emit('quote-toggle')"
+          @click="close"
+        >
+          <FAIcon
+            fixed-width
+            icon="quote-left"
+          /><span>{{ $t("tool_tip.quote") }}</span>
+        </button>
       </div>
     </template>
     <template v-slot:trigger>

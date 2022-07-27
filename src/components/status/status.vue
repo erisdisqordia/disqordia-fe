@@ -453,6 +453,7 @@
               :status="status"
               @onError="showError"
               @onSuccess="clearError"
+              @quote-toggle="toggleQuoting"
             />
           </div>
         </div>

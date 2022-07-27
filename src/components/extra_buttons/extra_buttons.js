@@ -6,6 +6,7 @@ import {
   faEyeSlash,
   faThumbtack,
   faShareAlt,
+  faQuoteLeft,
   faExternalLinkAlt
 } from '@fortawesome/free-solid-svg-icons'
 import {
@@ -20,6 +21,7 @@ library.add(
   faEyeSlash,
   faThumbtack,
   faShareAlt,
+  faQuoteLeft,
   faExternalLinkAlt,
   faFlag
 )

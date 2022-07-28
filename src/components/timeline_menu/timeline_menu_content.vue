@@ -12,18 +12,6 @@
         /><span :title="$t('nav.home_timeline_description')">{{ $t("nav.home_timeline") }}</span>
       </router-link>
     </li>
-    <li v-if="currentUser">
-      <router-link
-        class="menu-item"
-        :to="{ name: 'bubble-timeline' }"
-      >
-        <FAIcon
-          fixed-width
-          class="fa-scale-110 fa-old-padding "
-          icon="circle"
-        /><span :title="$t('nav.bubble_timeline_description')">{{ $t("nav.bubble_timeline") }}</span>
-      </router-link>
-    </li>
     <li v-if="currentUser || !privateMode">
       <router-link
         class="menu-item"
@@ -46,6 +34,18 @@
           class="fa-scale-110 fa-old-padding "
           icon="globe"
         /><span :title="$t('nav.twkn_timeline_description')">{{ $t("nav.twkn") }}</span>
+      </router-link>
+    </li>
+    <li v-if="currentUser">
+      <router-link
+        class="menu-item"
+        :to="{ name: 'bubble-timeline' }"
+      >
+        <FAIcon
+          fixed-width
+          class="fa-scale-110 fa-old-padding "
+          icon="comment-medical"
+        /><span :title="$t('nav.bubble_timeline_description')">{{ $t("nav.bubble_timeline") }}</span>
       </router-link>
     </li>
     <li v-if="currentUser">

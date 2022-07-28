@@ -24,6 +24,7 @@
 
 .QuoteButton {
   display: flex;
+  margin-left: -5px;
 
   > :first-child {
     padding: 10px;

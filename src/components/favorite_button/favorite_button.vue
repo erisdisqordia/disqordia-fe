@@ -36,6 +36,7 @@
 
 .FavoriteButton {
   display: flex;
+  margin-right: 5px;
 
   > :first-child {
     padding: 10px;

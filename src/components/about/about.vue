@@ -1,6 +1,6 @@
 <template>
   <div class="column-inner">
-    <instance-specific-panel v-if="showInstanceSpecificPanel" />
+    <!--<instance-specific-panel v-if="showInstanceSpecificPanel" />-->
     <staff-panel />
     <terms-of-service-panel />
     <MRFTransparencyPanel />

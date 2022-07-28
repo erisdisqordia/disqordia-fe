@@ -236,8 +236,8 @@
             "text/bbcode": "BBCode",
             "text/x.misskeymarkdown": "MFM"
         },
-        "content_warning": "Subject (optional)",
-        "default": "Just arrived at Luna Nova Academy",
+        "content_warning": "Content Warning / Subject (optional)",
+        "default": "Just landed on Neptune",
         "direct_warning_to_all": "This post will be visible to all the mentioned users.",
         "direct_warning_to_first_only": "This post will only be visible to the mentioned users at the beginning of the message.",
         "posting": "Posting",

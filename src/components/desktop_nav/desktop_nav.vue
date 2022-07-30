@@ -6,15 +6,16 @@
     @click="scrollToTop()"
   >
     <div class="inner-nav">
-      <div class="item sitename">
+      <div class="item nav-left-wrapper">
         <router-link
-          class="site-name"
+          class="site-brand"
           :to="{ name: 'root' }"
           active-class="home"
         >
           <img src="/favicon.png">
           <span
             v-if="!hideSitename"
+            class="site-name"
           >
             {{ sitename }}
           </span>
@@ -68,18 +69,6 @@
               :title="$t('nav.bubble_timeline')"
             />
           </router-link>
-          <router-link
-            v-if="currentUser"
-            :to="{ name: 'lists' }"
-            class="nav-icon"
-          >
-            <FAIcon
-              fixed-width
-              class="fa-scale-110 fa-old-padding"
-              icon="list"
-              :title="$t('nav.lists')"
-            />
-          </router-link>
         </div>
       </div>
       <router-link
@@ -115,6 +104,18 @@
               class="fa-scale-110 fa-old-padding"
               icon="bolt"
               :title="$t('nav.interactions')"
+            />
+          </router-link>
+          <router-link
+            v-if="currentUser"
+            :to="{ name: 'lists' }"
+            class="nav-icon"
+          >
+            <FAIcon
+              fixed-width
+              class="fa-scale-110 fa-old-padding"
+              icon="list"
+              :title="$t('nav.lists')"
             />
           </router-link>
           <router-link

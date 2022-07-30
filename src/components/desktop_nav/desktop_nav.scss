@@ -15,7 +15,7 @@
     display: grid;
     grid-template-rows: var(--navbar-height);
     grid-template-columns: 2fr auto 2fr;
-    grid-template-areas: "sitename logo actions";
+    grid-template-areas: "nav-left logo actions";
     box-sizing: border-box;
     padding: 0 1.2em;
     margin: auto;
@@ -24,7 +24,7 @@
 
   &.-logoLeft .inner-nav {
     grid-template-columns: auto 2fr 2fr;
-    grid-template-areas: "logo sitename actions";
+    grid-template-areas: "logo nav-left actions";
   }
 
   .button-default {
@@ -120,8 +120,8 @@
     }
   }
 
-  .sitename {
-    grid-area: sitename;
+  .nav-left-wrapper {
+    grid-area: nav-left;
 
     img {
       height: 28px;

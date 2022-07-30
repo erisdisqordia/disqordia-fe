@@ -19,7 +19,7 @@
     box-sizing: border-box;
     padding: 0 1.2em;
     margin: auto;
-    max-width: 980px;
+    max-width: 1110px;
   }
 
   &.-logoLeft .inner-nav {
@@ -99,8 +99,23 @@
     }
   }
 
+  .left {
+    padding-left: 5px;
+    display: flex;
+
+    .nav-icon {
+      margin-left: 0.15em;
+    }
+  }
+
   .sitename {
     grid-area: sitename;
+
+    img {
+      height: 28px;
+      vertical-align: middle;
+      padding-right: 5px;
+    }
   }
 
   .actions {
@@ -118,6 +133,11 @@
     &.right {
       justify-content: flex-end;
       text-align: right;
+    }
+
+    &.left {
+      justify-content: flex-start;
+      text-alignt: left;
     }
   }
 }

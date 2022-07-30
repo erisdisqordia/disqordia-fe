@@ -11,6 +11,11 @@ import {
   faSearch,
   faTachometerAlt,
   faCog,
+  faGlobe,
+  faBolt,
+  faUsers,
+  faCommentMedical,
+  faBookmark,
   faInfoCircle
 } from '@fortawesome/free-solid-svg-icons'
 
@@ -25,6 +30,11 @@ library.add(
   faSearch,
   faTachometerAlt,
   faCog,
+  faGlobe,
+  faBolt,
+  faUsers,
+  faCommentMedical,
+  faBookmark,
   faInfoCircle
 )
 

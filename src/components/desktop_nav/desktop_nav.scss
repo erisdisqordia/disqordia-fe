@@ -93,6 +93,18 @@
       margin-left: 2em;
     }
 
+    &.router-link-active {
+      font-size: 1.2em;
+      margin-top: 0.05em;
+
+      .svg-inline--fa {
+        font-weight: bolder;
+        color: $fallback--text;
+        color: var(--selectedMenuText, $fallback--text);
+        --lightText: var(--selectedMenuLightText, $fallback--lightText);
+      }
+    }
+
     .svg-inline--fa {
       color: $fallback--link;
       color: var(--topBarLink, $fallback--link);

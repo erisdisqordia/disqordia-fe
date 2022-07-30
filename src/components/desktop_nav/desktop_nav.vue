@@ -25,6 +25,7 @@
           class="nav-items left"
         >
           <router-link
+            v-if-"currentUser"
             :to="{ name: 'friends' }"
             class="nav-icon"
           >

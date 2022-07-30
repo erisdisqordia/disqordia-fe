@@ -24,6 +24,17 @@
           class="nav-items left"
         >
           <router-link
+            :to="{ name: 'friends' }"
+            class="nav-icon"
+          >
+            <FAIcon
+              fixed-width
+              class="fa-scale-110 fa-old-padding"
+              icon="home"
+              :title="$t('nav.home_timeline')"
+            />
+          </router-link>
+          <router-link
             :to="{ name: 'public-timeline' }"
             class="nav-icon"
           >

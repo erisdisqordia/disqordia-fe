@@ -150,7 +150,7 @@
         "back": "Back",
         "friend_requests": "Follow Requests",
         "mentions": "Mentions",
-        "interactions": "Notifications",
+        "interactions": "Interactions",
         "dms": "Direct Messages",
         "public_tl": "Local Timeline",
         "public_timeline_description": "Public posts from this instance",

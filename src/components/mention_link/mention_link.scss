@@ -15,11 +15,15 @@
 
   .mention-avatar {
     border-radius: var(--avatarAltRadius, $fallback--avatarAltRadius);
-    width: 1.5em;
-    height: 1.5em;
+    width: 2em;
+    height: 2em;
     vertical-align: middle;
     user-select: none;
     margin-right: 0.2em;
+
+    .still-image.avatar {
+      border-radius: 14px;
+    }
   }
 
   .full {
@@ -111,5 +115,13 @@
 
   .full .-faded {
     color: var(--faint, $fallback--faint);
+  }
+}
+
+.reply-glued-label {
+
+  .mention-avatar {
+    width: 1.4em;
+    height: 1.4em;
   }
 }

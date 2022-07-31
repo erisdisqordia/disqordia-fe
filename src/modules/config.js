@@ -84,7 +84,7 @@ export const defaultState = {
   useAtIcon: undefined, // instance default
   mentionLinkDisplay: undefined, // instance default
   mentionLinkShowTooltip: undefined, // instance default
-  mentionLinkShowAvatar: undefined, // instance default
+  mentionLinkShowAvatar: true, // instance default
   mentionLinkFadeDomain: undefined, // instance default
   mentionLinkShowYous: undefined, // instance default
   mentionLinkBoldenYou: undefined, // instance default

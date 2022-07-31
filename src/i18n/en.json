@@ -424,6 +424,7 @@
         "hide_shoutbox": "Hide instance shoutbox",
         "right_sidebar": "Reverse order of columns",
         "always_show_post_button": "Always show floating New Post button",
+        "hide_threads_with_blocked_users": "Hide threads tagging blocked users",
         "hide_wallpaper": "Hide instance wallpaper",
         "preload_images": "Preload images",
         "use_one_click_nsfw": "Open NSFW attachments with just one click",

@@ -76,7 +76,7 @@
             </table>
           </div>
 
-          <div v-if="quarantineInstances.length">
+          <!--<div v-if="quarantineInstances.length">
             <h4>{{ $t("about.mrf.simple.quarantine") }}</h4>
 
             <p>{{ $t("about.mrf.simple.quarantine_desc") }}</p>
@@ -99,7 +99,7 @@
                 </td>
               </tr>
             </table>
-          </div>
+          </div>-->
 
           <div v-if="ftlRemovalInstances.length">
             <h4>{{ $t("about.mrf.simple.ftl_removal") }}</h4>
@@ -176,7 +176,7 @@
             </table>
           </div>
 
-          <h2 v-if="hasKeywordPolicies">
+          <!--<h2 v-if="hasKeywordPolicies">
             {{ $t("about.mrf.keyword.keyword_policies") }}
           </h2>
 
@@ -217,7 +217,7 @@
                 {{ keyword.replacement }}
               </li>
             </ul>
-          </div>
+          </div>-->
         </div>
       </div>
     </div>

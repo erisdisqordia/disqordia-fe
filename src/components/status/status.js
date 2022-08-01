@@ -358,7 +358,7 @@ const Status = {
       return (!this.shouldNotMute) && (
         (this.muted && this.hideFilteredStatuses) ||
         (this.userIsMuted && this.hideMutedUsers) ||
-        (this.status.thread_muted && this.hideMutedThreads) ||
+        ((this.status.thread_muted || this.mentionsMutedUser) && this.hideMutedThreads) ||
         (this.muteWordHits.length > 0 && this.hideWordFilteredPosts) ||
         (this.mentionsBlockedUser && this.hideThreadsWithBlockedUsers)
       )

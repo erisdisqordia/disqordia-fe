@@ -75,7 +75,16 @@ export default {
       })
     },
     logo () { return this.$store.state.instance.logo },
+    mergedConfig () {
+      return this.$store.getters.mergedConfig
+    },
     sitename () { return this.$store.state.instance.name },
+    hideSiteFavicon () {
+      return this.mergedConfig.hideSiteFavicon
+    },
+    hideSiteName () {
+      return this.mergedConfig.hideSiteName
+    },
     hideSitename () { return this.$store.state.instance.hideSitename },
     logoLeft () { return this.$store.state.instance.logoLeft },
     currentUser () { return this.$store.state.users.currentUser },

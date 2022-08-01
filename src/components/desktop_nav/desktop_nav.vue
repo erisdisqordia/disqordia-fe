@@ -12,9 +12,13 @@
           :to="{ name: 'root' }"
           active-class="home"
         >
-          <img src="/favicon.png">
+          <img
+            v-if="!hideSiteFavicon"
+            class="favicon"
+            src="/favicon.png"
+          >
           <span
-            v-if="!hideSitename"
+            v-if="!hideSiteName"
             class="site-name"
           >
             {{ sitename }}

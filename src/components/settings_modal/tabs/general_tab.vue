@@ -26,6 +26,16 @@
           </BooleanSetting>
         </li>
         <li>
+          <BooleanSetting path="hideSiteFavicon">
+            {{ $t('settings.hide_site_favicon') }}
+          </BooleanSetting>
+        </li>
+        <li>
+          <BooleanSetting path="hideSiteName">
+            {{ $t('settings.hide_site_name') }}
+          </BooleanSetting>
+        </li>
+        <li>
           <BooleanSetting path="stopGifs">
             {{ $t('settings.stop_gifs') }}
           </BooleanSetting>

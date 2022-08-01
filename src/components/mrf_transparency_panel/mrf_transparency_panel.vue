@@ -65,7 +65,7 @@
                 v-for="entry in rejectInstances"
                 :key="entry.instance + '_reject'"
               >
-                <td>{{ entry.instance }}</td>
+                <td>{{ entry.instance.replace(/[aeiou](?=.*\.)/gi, '*') }}</td>
                 <td v-if="entry.reason === ''">
                   {{ $t("about.mrf.simple.not_applicable") }}
                 </td>
@@ -90,7 +90,7 @@
                 v-for="entry in quarantineInstances"
                 :key="entry.instance + '_quarantine'"
               >
-                <td>{{ entry.instance }}</td>
+                <td>{{ entry.instance.replace(/[aeiou](?=.*\.)/gi, '*') }}</td>
                 <td v-if="entry.reason === ''">
                   {{ $t("about.mrf.simple.not_applicable") }}
                 </td>
@@ -115,7 +115,7 @@
                 v-for="entry in ftlRemovalInstances"
                 :key="entry.instance + '_ftl_removal'"
               >
-                <td>{{ entry.instance }}</td>
+                <td>{{ entry.instance.replace(/[aeiou](?=.*\.)/gi, '*') }}</td>
                 <td v-if="entry.reason === ''">
                   {{ $t("about.mrf.simple.not_applicable") }}
                 </td>
@@ -140,7 +140,7 @@
                 v-for="entry in mediaNsfwInstances"
                 :key="entry.instance + '_media_nsfw'"
               >
-                <td>{{ entry.instance }}</td>
+                <td>{{ entry.instance.replace(/[aeiou](?=.*\.)/gi, '*') }}</td>
                 <td v-if="entry.reason === ''">
                   {{ $t("about.mrf.simple.not_applicable") }}
                 </td>
@@ -165,7 +165,7 @@
                 v-for="entry in mediaRemovalInstances"
                 :key="entry.instance + '_media_removal'"
               >
-                <td>{{ entry.instance }}</td>
+                <td>{{ entry.instance.replace(/[aeiou](?=.*\.)/gi, '*') }}</td>
                 <td v-if="entry.reason === ''">
                   {{ $t("about.mrf.simple.not_applicable") }}
                 </td>

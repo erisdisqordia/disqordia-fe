@@ -277,6 +277,22 @@ const Status = {
 
       return mentions
     },
+    mentionsMutedUser () {
+      // XXX: doesn't work on domain blocks, because users from blocked domains
+      // don't appear in `attentions' and therefore cannot be filtered.
+      let mentions = false
+
+      // find if user in mentions list is blocked
+      this.status.attentions.forEach((attn) => {
+        if (attn.id === this.currentUser.id) return
+        const relationship = this.$store.getters.relationship(attn.id)
+        if (relationship.muting) {
+          mentions = true
+        }
+      })
+
+      return mentions
+    },
     muted () {
       if (this.statusoid.user.id === this.currentUser.id) return false
       const reasonsToMute = this.userIsMuted ||
@@ -287,7 +303,9 @@ const Status = {
         // bot status
         (this.muteBotStatuses && this.botStatus && !this.compact) ||
         // mentions blocked user
-        this.mentionsBlockedUser
+        this.mentionsBlockedUser ||
+        // mentions muted user
+        this.mentionsMutedUser
       return !this.unmuted && !this.shouldNotMute && reasonsToMute
     },
     userIsMuted () {

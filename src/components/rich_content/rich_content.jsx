@@ -359,8 +359,6 @@ export const preProcessPerLine = (html, greentext) => {
         .trim()
       if (cleanedString.startsWith('&gt;')) {
         return `<span class='greentext'>${string}</span>`
-      } else if (cleanedString.startsWith('&lt;')) {
-        return `<span class='cyantext'>${string}</span>`
       }
     }
 

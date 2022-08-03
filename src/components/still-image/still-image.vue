@@ -89,4 +89,9 @@
     }
   }
 }
+.still-image.emoji {
+  img {
+    height: unset;
+  }
+}
 </style>

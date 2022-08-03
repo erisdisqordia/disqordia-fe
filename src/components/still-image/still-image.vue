@@ -50,7 +50,7 @@
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   &.animated {
@@ -87,11 +87,6 @@
     &:hover img {
       visibility: visible;
     }
-  }
-}
-.still-image.emoji {
-  img {
-    height: unset;
   }
 }
 </style>

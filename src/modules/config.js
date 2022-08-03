@@ -50,7 +50,7 @@ export const defaultState = {
   alwaysShowNewPostButton: true,
   autohideFloatingPostButton: false,
   pauseOnUnfocused: true,
-  stopGifs: true,
+  stopGifs: false,
   replyVisibility: 'following',
   thirdColumnMode: 'notifications',
   notificationVisibility: {

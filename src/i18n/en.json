@@ -561,7 +561,7 @@
         "sensitive_if_subject": "Automatically mark images as sensitive if a subject line is specified",
         "render_mfm": "Render Misskey Markdown",
         "useStreamingApiWarning": "It's cool use it. If it breaks refresh I guess?",
-        "stop_gifs": "Pause animated images until you hover on them",
+        "stop_gifs": "Pause animated images until you hover on them (breaks MFM emojis)",
         "streaming": "Automatically show new posts when scrolled to the top",
         "user_mutes": "Users",
         "useStreamingApi": "Receive posts and notifications real-time",

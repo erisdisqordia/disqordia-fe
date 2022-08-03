@@ -36,6 +36,7 @@ import {
   faStar,
   faEyeSlash,
   faEye,
+  faBiohazard,
   faThumbtack,
   faChevronUp,
   faChevronDown,
@@ -56,6 +57,7 @@ library.add(
   faEllipsisH,
   faEyeSlash,
   faEye,
+  faBiohazard,
   faThumbtack,
   faChevronUp,
   faChevronDown,
@@ -449,7 +451,7 @@ const Status = {
         case 'direct':
           return 'envelope'
         case 'local':
-          return 'users'
+          return 'biohazard'
         default:
           return 'globe'
       }

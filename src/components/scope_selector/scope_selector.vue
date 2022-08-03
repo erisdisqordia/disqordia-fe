@@ -67,7 +67,7 @@
       @click="changeVis('local')"
     >
       <FAIcon
-        icon="users"
+        icon="biohazard"
         class="fa-scale-110 fa-old-padding"
       />
     </button>

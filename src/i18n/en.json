@@ -106,7 +106,8 @@
             "direct": "Direct",
             "private": "Followers-only",
             "public": "Public",
-            "unlisted": "Unlisted"
+            "unlisted": "Unlisted",
+            "local": "Local-only post -- only your instance can see this status"
         }
     },
     "image_cropper": {
@@ -257,7 +258,7 @@
             "private": "Followers-only - post to followers only",
             "public": "Public - post to public timelines",
             "unlisted": "Unlisted - do not post to public timelines",
-            "local": "Local - do not federate this post"
+            "local": "Local - only your instance can see this status"
         }
     },
     "registration": {

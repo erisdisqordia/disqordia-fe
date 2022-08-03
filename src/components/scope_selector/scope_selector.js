@@ -2,6 +2,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   faEnvelope,
   faLock,
+  faBiohazard,
   faLockOpen,
   faGlobe
 } from '@fortawesome/free-solid-svg-icons'
@@ -9,6 +10,7 @@ import {
 library.add(
   faEnvelope,
   faGlobe,
+  faBiohazard,
   faLock,
   faLockOpen
 )

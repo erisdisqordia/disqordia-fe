@@ -88,9 +88,10 @@
     }
   }
   .emoji-picker-panel {
-    position: absolute;
+    position: relative;
     z-index: 20;
     margin-top: 2px;
+    top: 0px !important;
 
     &.hide {
       display: none

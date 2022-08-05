@@ -1,6 +1,7 @@
 <template>
   <div class="emoji-picker panel panel-default panel-body">
     <div class="heading">
+      <span class="emoji-header">Emoji Packs</span>
       <span class="emoji-tabs">
         <span
           v-for="group in emojis"

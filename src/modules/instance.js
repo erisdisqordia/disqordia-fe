@@ -58,6 +58,7 @@ const defaultState = {
   sensitiveByDefault: false,
   sensitiveIfSubject: true,
   renderMisskeyMarkdown: true,
+  mfmOnHover: false,
   conversationDisplay: 'linear',
   conversationTreeAdvanced: false,
   conversationOtherRepliesButton: 'below',

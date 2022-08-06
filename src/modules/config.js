@@ -98,6 +98,7 @@ export const defaultState = {
   sensitiveByDefault: undefined, // instance default
   sensitiveIfSubject: undefined,
   renderMisskeyMarkdown: true,
+  mfmOnHover: undefined, // instance default
   conversationDisplay: undefined, // instance default
   conversationTreeAdvanced: undefined, // instance default
   conversationOtherRepliesButton: undefined, // instance default

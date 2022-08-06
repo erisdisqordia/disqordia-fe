@@ -100,6 +100,9 @@ const StatusContent = {
     maxThumbnails () {
       return this.mergedConfig.maxThumbnails
     },
+    mfmOnHover () {
+      return this.mergedConfig.mfmOnHover
+    },
     ...mapGetters(['mergedConfig']),
     ...mapState({
       currentUser: state => state.users.currentUser

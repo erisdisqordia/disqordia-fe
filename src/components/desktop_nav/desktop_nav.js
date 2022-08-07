@@ -82,7 +82,9 @@ export default {
     showNavShortcuts () {
       return this.mergedConfig.showNavShortcuts
     },
-
+    showWiderShortcuts () {
+      return this.mergedConfig.showWiderShortcuts
+    },
     hideSiteFavicon () {
       return this.mergedConfig.hideSiteFavicon
     },

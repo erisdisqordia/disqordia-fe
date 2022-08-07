@@ -111,6 +111,12 @@
     }
   }
 
+  .-wide {
+    .nav-icon:not(.nav-icon-logout) {
+      margin-left: 0.7em;
+    }
+  }
+
   .left {
     padding-left: 5px;
     display: flex;

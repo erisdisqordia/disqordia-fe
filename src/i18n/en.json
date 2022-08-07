@@ -565,6 +565,7 @@
         "render_mfm_on_hover": "Pause MFM animations until status hover",
         "useStreamingApiWarning": "It's cool use it. If it breaks refresh I guess?",
         "stop_gifs": "Pause animated images until you hover on them (breaks MFM emojis)",
+        "show_wider_shortcuts": "Show wider gap between top panel shortcuts",
         "streaming": "Automatically show new posts when scrolled to the top",
         "user_mutes": "Users",
         "useStreamingApi": "Receive posts and notifications real-time",

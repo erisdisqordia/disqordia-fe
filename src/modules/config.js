@@ -37,6 +37,7 @@ export const defaultState = {
   collapseMessageWithSubject: true, // instance default
   padEmoji: true,
   showNavShortcuts: undefined, // instance default
+  showWiderShortcuts: undefined, // instance default
   hideSiteFavicon: undefined, // instance default
   hideSiteName: undefined, // instance default
   hideAttachments: false,

@@ -5,7 +5,10 @@
     :class="{ '-logoLeft': logoLeft }"
     @click="scrollToTop()"
   >
-    <div class="inner-nav">
+    <div
+      class="inner-nav"
+      :class="{ '-wide': showWiderShortcuts }"
+    >
       <div class="item nav-left-wrapper">
         <router-link
           class="site-brand"

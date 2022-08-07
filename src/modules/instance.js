@@ -52,7 +52,7 @@ const defaultState = {
   showFeaturesPanel: true,
   showInstanceSpecificPanel: false,
   showNavShortcuts: true,
-  showWiderShortcuts: true,
+  showWiderShortcuts: false,
   sidebarRight: false,
   subjectLineBehavior: 'email',
   theme: 'pleroma-dark',

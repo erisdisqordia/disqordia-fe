@@ -164,18 +164,6 @@
             :title="$t('nav.administration')"
           />
         </a>
-        <button
-          v-if="currentUser"
-          class="button-unstyled nav-icon nav-icon-logout"
-          @click.prevent="logout"
-        >
-          <FAIcon
-            fixed-width
-            class="fa-scale-110 fa-old-padding"
-            icon="sign-out-alt"
-            :title="$t('login.logout')"
-          />
-        </button>
       </div>
     </div>
   </nav>

@@ -36,6 +36,11 @@
           </BooleanSetting>
         </li>
         <li>
+          <BooleanSetting path="showNavShortcuts">
+            {{ $t('settings.show_nav_shortcuts') }}
+          </BooleanSetting>
+        </li>
+        <li>
           <BooleanSetting path="stopGifs">
             {{ $t('settings.stop_gifs') }}
           </BooleanSetting>

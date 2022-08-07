@@ -79,6 +79,10 @@ export default {
       return this.$store.getters.mergedConfig
     },
     sitename () { return this.$store.state.instance.name },
+    showNavShortcuts () {
+      return this.mergedConfig.showNavShortcuts
+    },
+
     hideSiteFavicon () {
       return this.mergedConfig.hideSiteFavicon
     },

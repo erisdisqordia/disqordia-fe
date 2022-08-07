@@ -51,6 +51,7 @@ const defaultState = {
   scopeCopy: true,
   showFeaturesPanel: true,
   showInstanceSpecificPanel: false,
+  showNavShortcuts: true,
   sidebarRight: false,
   subjectLineBehavior: 'email',
   theme: 'pleroma-dark',

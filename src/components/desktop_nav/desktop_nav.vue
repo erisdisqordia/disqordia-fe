@@ -25,7 +25,7 @@
           </span>
         </router-link>
         <div
-          v-if="currentUser || !privateMode"
+          v-if="(currentUser || !privateMode) && showNavShortcuts"
           class="nav-items left"
         >
           <router-link
@@ -97,7 +97,7 @@
           @click.stop
         />
         <div
-          v-if="currentUser || !privateMode"
+          v-if="(currentUser || !privateMode) && showNavShortcuts"
           class="nav-items right"
         >
           <router-link

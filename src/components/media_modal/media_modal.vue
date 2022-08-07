@@ -188,9 +188,21 @@ $modal-view-button-icon-margin: 0.5em;
     overflow-y: auto;
     min-height: 1em;
     max-width: 500px;
-    max-height: 9.5em;
     word-break: break-word;
     white-space: pre-line;
+    background: rgba(0,0,0,0.6);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+
+    &:not(:hover) {
+      max-height: 1em;
+    }
+
+    &:hover {
+      max-height: 9.5em;
+      transition: 1s;
+    }
   }
 
   .modal-image {

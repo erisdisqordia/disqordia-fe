@@ -64,11 +64,11 @@
 
   color: $fallback--text;
   color: var(--text, $fallback--text);
-  border-style: solid;
+  border-style: dashed;
   border-width: 1px;
   border-radius: $fallback--attachmentRadius;
   border-radius: var(--attachmentRadius, $fallback--attachmentRadius);
-  border-color: $fallback--border;
-  border-color: var(--border, $fallback--border);
+  border-color: $fallback--cBlue;
+  border-color: var(--cBlue, $fallback--cBlue);
 }
 </style>

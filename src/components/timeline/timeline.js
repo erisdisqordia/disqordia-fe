@@ -18,7 +18,6 @@ const Timeline = {
     'timelineName',
     'title',
     'userId',
-    'listId',
     'tag',
     'embedded',
     'count',
@@ -102,7 +101,6 @@ const Timeline = {
       timeline: this.timelineName,
       showImmediately,
       userId: this.userId,
-      listId: this.listId,
       tag: this.tag
     })
   },
@@ -158,7 +156,6 @@ const Timeline = {
         older: true,
         showImmediately: true,
         userId: this.userId,
-        listId: this.listId,
         tag: this.tag
       }).then(({ statuses }) => {
         if (statuses && statuses.length === 0) {

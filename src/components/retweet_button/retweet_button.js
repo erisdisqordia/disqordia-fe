@@ -12,10 +12,24 @@ const RetweetButton = {
   },
   methods: {
     retweet () {
-      if (!this.status.repeated) {
-        this.$store.dispatch('retweet', { id: this.status.id })
+      if (this.mergedConfig.confirmRetweets) {
+        if (!this.status.repeated) {
+          const confirmed = window.confirm(this.$t('status.retweet_confirm'))
+          if (confirmed) {
+            this.$store.dispatch('retweet', { id: this.status.id })
+          }
+        } else {
+          const confirmed = window.confirm(this.$t('status.unretweet_confirm'))
+          if (confirmed) {
+            this.$store.dispatch('unretweet', { id: this.status.id })
+          }
+        }
       } else {
-        this.$store.dispatch('unretweet', { id: this.status.id })
+        if (!this.status.repeated) {
+          this.$store.dispatch('retweet', { id: this.status.id })
+        } else {
+          this.$store.dispatch('unretweet', { id: this.status.id })
+        }
       }
       this.animated = true
       setTimeout(() => {

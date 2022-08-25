@@ -38,6 +38,7 @@ const defaultState = {
   hideSiteName: false,
   hideUserStats: false,
   muteBotStatuses: false,
+  confirmRetweets: false,
   loginMethod: 'password',
   logo: '/static/logo.svg',
   logoMargin: '.2em',

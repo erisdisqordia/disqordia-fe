@@ -164,6 +164,13 @@
             {{ $t('settings.autohide_floating_post_button') }}
           </BooleanSetting>
         </li>
+        <li>
+          <BooleanSetting
+            path="confirmRetweets"
+          >
+            {{ $t('settings.confirm_retweets') }}
+          </BooleanSetting>
+        </li>
       </ul>
     </div>
     <div class="setting-item">

@@ -42,7 +42,6 @@ export const defaultState = {
   hideSiteName: undefined, // instance default
   hideAttachments: false,
   hideAttachmentsInConv: false,
-  confirmRetweets: undefined, // instance default
   maxThumbnails: 16,
   hideNsfw: true,
   preloadImage: true,

@@ -10,10 +10,19 @@
     <link rel="stylesheet" href="/static/font/css/lato.css">
     <link rel="stylesheet" href="/static/mfm.css">
     <!--server-generated-meta-->
+    <link rel="manifest" href="/static/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar" content="black-translucent" />
+    <link rel="apple-touch-icon" href="/images/icons/icon-512x512.png"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color-orig" content="#000000" />
     <link rel="icon" type="image/png" href="/favicon.png">
   </head>
   <body class="hidden">
     <noscript>To use Pleroma, please enable JavaScript.</noscript>
+    <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/static/service-worker.js');} else {console.log("Service worker is not supported");}</script>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>

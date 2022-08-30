@@ -7,7 +7,11 @@ const conversationPage = {
   computed: {
     statusId () {
       return this.$route.params.id
-    }
+    },
+    currentUser () {
+      return this.$store.state.users.currentUser
+    },
+    privateMode () { return this.$store.state.instance.private }
   }
 }
 

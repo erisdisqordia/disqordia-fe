@@ -82,7 +82,8 @@ const UserProfile = {
     },
     currentUser () {
       return this.$store.state.users.currentUser
-    }
+    },
+    privateMode () { return this.$store.state.instance.private }
   },
   methods: {
     setFooterRef (el) {

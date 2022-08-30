@@ -137,6 +137,22 @@
       />
     </div>
     <div
+      v-else-if="!currentUser && privateMode"
+      class="panel user-profile-placeholder"
+    >
+      <div class="panel-heading">
+        <div class="title">
+          ???
+        </div>
+      </div>
+      <div class="panel-body error">
+        <img
+          class="error-img"
+          src="/static/error.gif"
+        >
+      </div>
+    </div>
+    <div
       v-else
       class="panel user-profile-placeholder"
     >
@@ -246,6 +262,15 @@
     justify-content: center;
     align-items: middle;
     padding: 7em;
+
+    &.error {
+      padding: 0em;
+    }
+
+    .error-img {
+      width: 100%;
+      border-radius: 0px 0px 10px 10px;
+    }
   }
 }
 </style>

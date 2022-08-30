@@ -13,6 +13,8 @@ const About = {
     MRFTransparencyPanel
   },
   computed: {
+    currentUser () { return this.$store.state.users.currentUser },
+    privateMode () { return this.$store.state.instance.private },
     showFeaturesPanel () { return this.$store.state.instance.showFeaturesPanel },
     showInstanceSpecificPanel () {
       return this.$store.state.instance.showInstanceSpecificPanel &&
